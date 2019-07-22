@@ -1,5 +1,8 @@
 package com.doudou;
 
+import java.nio.charset.Charset;
+import java.util.concurrent.ThreadLocalRandom;
+
 /**
  * @ClassName: StringUtil
  * @Author: doudou
@@ -60,6 +63,20 @@ public class StringUtil {
         return var1;
     }
 
+    /**
+     * @Author doudou
+     * @Date 17:41 2019/7/22
+     * @Description 根据传入的字符串和编码得到字节数组
+     **/
+    public static byte[] bytes(CharSequence str, Charset charset) {
+        if (str == null) {
+            return null;
+        }
 
+        if (null == charset) {
+            return str.toString().getBytes();
+        }
+        return str.toString().getBytes(charset);
+    }
 
 }
