@@ -1,7 +1,6 @@
 package com.doudou;
 
 import java.nio.charset.Charset;
-import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * @ClassName: StringUtil
@@ -72,7 +71,6 @@ public class StringUtil {
         if (str == null) {
             return null;
         }
-
         if (null == charset) {
             return str.toString().getBytes();
         }
