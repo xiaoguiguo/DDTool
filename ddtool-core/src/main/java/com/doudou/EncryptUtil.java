@@ -41,7 +41,8 @@ public class EncryptUtil {
         }
     }
 
-    /**     * @Author doudou
+    /**
+     * @Author doudou
      * @Date 10:50 2019/7/23
      * @Description 将字节数组转换成16进制字符串
      **/
